@@ -1,0 +1,72 @@
+/* TODO - remove text-dec from <a>'s, border-left of desc */
+:root {
+    --color-bg: #f9fafc;
+    --color-gray: #69696a;
+    --color-black: #000;
+    --color-white: #fff;
+}
+
+html, body {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    background-color: var(--color-bg);
+    margin: .5rem;
+    padding: 0;
+}
+
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    margin: .5rem 0;
+    list-style: none;
+}
+
+ul, li, a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--color-gray);
+}
+
+ul, li, .logo:visited {
+    color: var(--color-black);
+}
+
+ul, li, .nav-link:visited {
+    color: var(--color-gray);
+}
+
+.logo {
+    color: var(--color-black);
+}
+
+.btn-box {
+    text-align: center;
+    background-color: var(--color-black);
+    border-radius: 15px;
+    padding: .3rem 0;
+}
+
+.btn {
+    font-size: .9rem;
+    color: var(--color-white);
+}
+
+main, h1 {
+    margin-top: 2rem;
+}
+
+.description {
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+    color: var(--color-gray);
+    border-left: 1px solid var(--color-gray);
+}
