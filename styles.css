@@ -4,6 +4,9 @@
     --color-gray: #69696a;
     --color-black: #000;
     --color-white: #fff;
+    --color-pink: rgba(247, 136, 167, 0.6);
+    --color-orange: rgba(247, 193, 162, 0.7);
+    --color-purple: rgba(207, 130, 213, 0.6);
 }
 
 html, body {
@@ -69,4 +72,24 @@ main, h1 {
     padding: 0 1rem;
     color: var(--color-gray);
     border-left: 1px solid var(--color-gray);
+}
+
+/*  Media Queries */
+
+@media (min-width: 768px) {
+    nav, ul {
+        display: flex;        
+        align-items: center;
+    }
+
+    .navigation {
+        display: flex;
+        align-items: center;
+    }
+
+    .navigation a {
+        
+    }
+
+    
 }
