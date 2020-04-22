@@ -47,7 +47,7 @@ ul, li, .nav-link:visited {
     color: var(--color-gray);
 }
 
-.logo {
+.logo a{
     color: var(--color-black);
 }
 
@@ -64,7 +64,9 @@ ul, li, .nav-link:visited {
 }
 
 main, h1 {
+    font-size: 16px;
     margin-top: 2rem;
+    margin-bottom: 0;
 }
 
 .description {
@@ -77,19 +79,24 @@ main, h1 {
 /*  Media Queries */
 
 @media (min-width: 768px) {
-    nav, ul {
-        display: flex;        
-        align-items: center;
-    }
-
-    .navigation {
+    header {
         display: flex;
+        justify-content: flex-end;
         align-items: center;
     }
 
-    .navigation a {
-        
+    .logo {
+        margin-right: auto;
+        margin-top: 0;
     }
 
-    
+    .navigation li {
+        display: inline-block;
+        padding: 0 1rem;
+    }
+
+    .cta {
+        padding: .3rem 1rem;
+        border-radius: 20px;
+    }
 }
