@@ -76,6 +76,10 @@ main, h1 {
     border-left: 1px solid var(--color-gray);
 }
 
+.circles {
+    display: none;
+}
+
 /*  Media Queries */
 
 @media (min-width: 768px) {
@@ -98,5 +102,55 @@ main, h1 {
     .cta {
         padding: .3rem 1rem;
         border-radius: 20px;
+    }
+
+    main {
+        margin-top: 8rem;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .description {
+        max-width: 50vw;
+    }
+
+    .circles {
+        position: relative;
+        display: initial;
+        width: 100%;
+        max-width: 50vw;
+        margin-top: -1.5rem;
+        margin-left: auto;
+    }
+
+    .circle-lg {
+        position: absolute;
+        background-color: var(--color-pink);
+        width: 12rem;
+        height: 12rem;
+        border-radius: 50%;
+        right: 5rem;
+    }
+
+    .circle-md {
+        position: absolute;
+        background-color: var(--color-orange);
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        right: 0;
+        top: 6.5rem;
+    }
+
+    .circle-sm {
+        position: absolute;
+        background-color: var(--color-purple);
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+        right: 0;
     }
 }
