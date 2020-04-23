@@ -129,28 +129,40 @@ main, h1 {
     .circle-lg {
         position: absolute;
         background-color: var(--color-pink);
-        width: 12rem;
-        height: 12rem;
+        width: 9.5rem;
+        height: 9.5rem;
         border-radius: 50%;
-        right: 5rem;
+        right: 4rem;
+        z-index: 1;
     }
 
     .circle-md {
         position: absolute;
         background-color: var(--color-orange);
-        width: 10rem;
-        height: 10rem;
+        width: 7.5rem;
+        height: 7.5rem;
         border-radius: 50%;
         right: 0;
-        top: 6.5rem;
+        top: 6rem;
+        z-index: 2;
     }
 
     .circle-sm {
         position: absolute;
         background-color: var(--color-purple);
-        width: 8rem;
-        height: 8rem;
+        width: 6rem;
+        height: 6rem;
         border-radius: 50%;
         right: 0;
+        top: 2rem;
+        z-index: 0;
+    }
+    
+    .btn-bottom {
+        position: absolute;
+        margin-bottom: 1rem;
+        padding: .3rem 1rem;
+        left: 50%;
+        bottom: 0;
     }
 }
