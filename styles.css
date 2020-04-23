@@ -69,6 +69,10 @@ main, h1 {
     margin-bottom: 0;
 }
 
+main h1 {
+    font-size: 36px;
+}
+
 .description {
     margin-bottom: 2rem;
     padding: 0 1rem;
